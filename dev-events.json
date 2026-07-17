@@ -1,0 +1,40 @@
+[
+  {
+    "feature": "sleepStories",
+    "featureName": "Sleep Stories (example)",
+    "owner": "example, delete when real features arrive",
+    "status": "in-dev",
+    "submitted": "2026-07-17",
+    "branch": "feat/sleep-stories",
+    "events": [
+      {
+        "event": "screen_viewed",
+        "screen": "sleep_stories_home",
+        "payload": "{ screen: 'sleep_stories_home', source: 'home' }",
+        "file": "app/features/sleepStories/SleepStoriesHome.tsx",
+        "line": null
+      },
+      {
+        "event": "button_clicked",
+        "screen": "sleep_stories_home",
+        "payload": "{ screen: 'sleep_stories_home', button: 'play_story', story_id: storyId }",
+        "file": "app/features/sleepStories/SleepStoriesHome.tsx",
+        "line": null
+      },
+      {
+        "event": "session_completed",
+        "screen": "sleep_story_player",
+        "payload": "{ screen: 'sleep_story_player', session_type: 'sleep_story', sec: durationSec, story_id: storyId }",
+        "file": "app/features/sleepStories/SleepStoryPlayer.tsx",
+        "line": null
+      },
+      {
+        "event": "story_favourited",
+        "screen": "sleep_story_player",
+        "payload": "{ storyId: storyId, favourited: true }",
+        "file": "app/features/sleepStories/SleepStoryPlayer.tsx",
+        "line": null
+      }
+    ]
+  }
+]

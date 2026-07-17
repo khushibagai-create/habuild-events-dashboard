@@ -1,0 +1,337 @@
+feature,file,line,event,screen,button,trigger,payload
+attendance,app/features/attendance/hooks/useAttendanceScreen.ts,69,in_app_review,attendance,,,screen=attendance; totalAttendedDays=~totalAttendedDays
+attendance,app/features/attendance/hooks/useAttendanceScreen.ts,90,screen_viewed,attendance,,,screen=attendance; source=home
+attendance,app/features/attendance/hooks/useMonthlyCalendar.ts,98,button_clicked,attendance,monthly_calendar_previous_month,,screen=attendance; button=monthly_calendar_previous_month
+attendance,app/features/attendance/hooks/useMonthlyCalendar.ts,106,button_clicked,attendance,monthly_calendar_next_month,,screen=attendance; button=monthly_calendar_next_month
+boxBreathing,app/features/boxBreathing/components/BoxBreathingAppreciation.tsx,76,button_clicked,box_breathing_summary,share_box_breathing_summary,,screen=box_breathing_summary; button=share_box_breathing_summary
+boxBreathing,app/features/boxBreathing/components/BoxBreathingCheckin.tsx,101,box_breathing_checkin_rated,,,,rating=~next; completed_sessions_total=~completedSessionsTotal
+boxBreathing,app/features/boxBreathing/components/BoxBreathingCheckin.tsx,119,box_breathing_checkin_submitted,,,,rating=~rating; note=~note; completed_sessions_total=~completedSessionsTotal
+boxBreathing,app/features/boxBreathing/components/BoxBreathingCheckin.tsx,130,button_clicked,box_breathing_summary,share_box_breathing_checkin,,screen=box_breathing_summary; button=share_box_breathing_checkin; rating=~rating
+boxBreathing,app/features/boxBreathing/components/BoxBreathingCheckin.tsx,135,box_breathing_checkin_shared,,,,rating=~rating; completed_sessions_total=~completedSessionsTotal
+boxBreathing,app/features/boxBreathing/components/BoxBreathingFacts.tsx,63,box_breathing_fact_shown,,,,fact_id=~fact.id; expert_name=~fact.expert_name; completed_sessions_total=~completedSessionsTotal; fact=~fact.fact
+boxBreathing,app/features/boxBreathing/components/BoxBreathingFacts.tsx,72,button_clicked,box_breathing_summary,share_box_breathing_fact,,screen=box_breathing_summary; button=share_box_breathing_fact
+boxBreathing,app/features/boxBreathing/components/BreatheEverydayCard.tsx,40,button_clicked,home,breathe_everyday_cta,,screen=home; button=breathe_everyday_cta; component=breathe_everyday_card
+boxBreathing,app/features/boxBreathing/components/BreatheEverydayCard.tsx,49,button_clicked,home,box_breathing_settings,,button=box_breathing_settings; screen=home
+boxBreathing,app/features/boxBreathing/hooks/useBoxBreathingCustomSettings.ts,52,screen_viewed,box_breathing_custom,,,screen=box_breathing_custom
+boxBreathing,app/features/boxBreathing/hooks/useBoxBreathingCustomSettings.ts,64,button_clicked,box_breathing_custom,custom_duration_changed,,screen=box_breathing_custom; button=custom_duration_changed; duration_min=~val
+boxBreathing,app/features/boxBreathing/hooks/useBoxBreathingCustomSettings.ts,75,button_clicked,box_breathing_custom,custom_pattern_selected,,screen=box_breathing_custom; button=custom_pattern_selected; pattern=~`${seconds}-${seconds}-${seconds}-${seconds}`
+boxBreathing,app/features/boxBreathing/hooks/useBoxBreathingCustomSettings.ts,91,button_clicked,box_breathing_custom,custom_set_pattern,,screen=box_breathing_custom; button=custom_set_pattern; pattern=~`${resolvedSeconds}-${resolvedSeconds}-${resolvedSeconds}-${resolvedSeconds}`; duration_min=~minutes
+boxBreathing,app/features/boxBreathing/hooks/useBoxBreathingSettings.ts,89,button_clicked,box_breathing_preferences,notifications_toggle,,screen=box_breathing_preferences; button=notifications_toggle; value=off; blocked_reason=no_permission
+boxBreathing,app/features/boxBreathing/hooks/useBoxBreathingSettings.ts,105,button_clicked,box_breathing_preferences,notifications_toggle,,screen=box_breathing_preferences; button=notifications_toggle; value=on | off
+boxBreathing,app/features/boxBreathing/hooks/useBoxBreathingSettings.ts,131,screen_viewed,box_breathing_preferences,,,screen=box_breathing_preferences; entered_via=~route?.params?.onboardingExperience ?? 'settings'; has_customized=~preferences.hasCustomized; difficulty=~preferences.difficulty; seconds_per_side=~preferences.secondsPerSide; minutes=~preferences.minutes
+boxBreathing,app/features/boxBreathing/hooks/useBoxBreathingSettings.ts,159,button_clicked,box_breathing_preferences,preferences_save,,screen=box_breathing_preferences; button=preferences_save; preset=~localSettings.difficulty.toLowerCase(); pattern=~`${rawPerSide}-${rawPerSide}-${rawPerSide}-${rawPerSide}`; duration_min=~localSettings.minutes
+boxBreathing,app/features/boxBreathing/hooks/useBoxBreathingSettings.ts,200,button_clicked,box_breathing_preferences,preset_selected,,screen=box_breathing_preferences; button=preset_selected; preset=~difficulty.toLowerCase()
+boxBreathing,app/features/boxBreathing/hooks/useBoxBreathingSettings.ts,227,button_clicked,box_breathing_preferences,preset_selected,,screen=box_breathing_preferences; button=preset_selected; preset=custom
+boxBreathing,app/features/boxBreathing/hooks/useBoxBreathingSettings.ts,259,button_clicked,box_breathing_preferences,guided_sound_toggle,,screen=box_breathing_preferences; button=guided_sound_toggle; value=on | off
+boxBreathing,app/features/boxBreathing/hooks/useSessionInterruption.ts,77,session_completed,box_breathing_exercise,,,screen=box_breathing_exercise; session_number=~sessionNumber; completion_status=partial; duration_completed_min=~Math.round((elapsed / 60) * 10) / 10; time_into_session_sec=~Math.round(elapsed)
+boxBreathing,app/features/boxBreathing/screens/BoxBreathingOnboardingScreen.tsx,40,screen_viewed,box_breathing_onboarding,,,screen=box_breathing_onboarding
+boxBreathing,app/features/boxBreathing/screens/BoxBreathingOnboardingScreen.tsx,52,button_clicked,box_breathing_onboarding,breathing_onboarding_next,,button=breathing_onboarding_next; screen=box_breathing_onboarding
+boxBreathing,app/features/boxBreathing/screens/BoxBreathingOnboardingScreen.tsx,60,button_clicked,box_breathing_onboarding,breathing_onboarding_skip,,button=breathing_onboarding_skip; screen=box_breathing_onboarding
+boxBreathing,app/features/boxBreathing/screens/BoxBreathingOnboardingScreen.tsx,78,button_clicked,box_breathing_onboarding,experience_selected,,button=experience_selected; screen=box_breathing_onboarding; value=~experience
+boxBreathing,app/features/boxBreathing/screens/BoxBreathingOnboardingScreen.tsx,83,button_clicked,box_breathing_onboarding,onboarding_continue,,button=onboarding_continue; screen=box_breathing_onboarding; chosen_path=~experience
+boxBreathing,app/features/boxBreathing/screens/BoxBreathingScreen.tsx,192,screen_viewed,box_breathing_exercise,,,screen=box_breathing_exercise
+boxBreathing,app/features/boxBreathing/screens/BoxBreathingScreen.tsx,204,button_clicked,session_start,session_start,,screen=session_start; button=session_start; session_number=~effectiveSessionNumber
+boxBreathing,app/features/boxBreathing/screens/BoxBreathingScreen.tsx,213,button_clicked,session_start,box_breathing_settings,,screen=session_start; button=box_breathing_settings; session_number=~effectiveSessionNumber
+boxBreathing,app/features/boxBreathing/screens/BoxBreathingScreen.tsx,307,screen_viewed,session_start,,,screen=session_start; session_number=~effectiveSessionNumber; pattern=~todaysPatternLabel; duration_min=~effectiveMinutes; phase=~getPhaseForSession(effectiveSessionNumber); is_custom=~isCustom
+boxBreathing,app/features/boxBreathing/screens/BoxBreathingScreen.tsx,442,button_clicked,box_breathing_exercise,sound_toggle,,screen=box_breathing_exercise; button=sound_toggle; sound_enabled=~isMuted; session_phase=~getSessionPhase()
+boxBreathing,app/features/boxBreathing/screens/BoxBreathingSummaryScreen.tsx,68,session_completed,,,,session_number=~trackedSessionNumber; pattern=~pattern; duration_min=~durationMinutes; completion_status=complete; duration_completed_min=~Math.round((stats.duration / 60) * 10) / 10; phase=~getPhaseForSession(trackedSessionNumber)
+boxBreathing,app/features/boxBreathing/screens/BoxBreathingSummaryScreen.tsx,79,level_unlocked,,,,from_session=~trackedSessionNumber; to_session=~trackedSessionNumber + 1; new_pattern=~formatBreathingPattern(nextLevel.pattern); new_duration_min=~nextLevel.durationMinutes; new_phase=~getPhaseForSession(trackedSessionNumber + 1)
+boxBreathing,app/features/boxBreathing/screens/BoxBreathingSummaryScreen.tsx,104,button_clicked,box_breathing_summary,box_breathing_settings,,button=box_breathing_settings; screen=box_breathing_summary
+boxBreathing,app/features/boxBreathing/screens/BoxBreathingSummaryScreen.tsx,121,button_clicked,box_breathing_summary,box_breathing_checkin_submit,,screen=box_breathing_summary; button=box_breathing_checkin_submit; rating=~rating; note=~note
+boxBreathing,app/features/boxBreathing/screens/LungTestScreen.tsx,64,screen_viewed,lung_test_intro,,,screen=lung_test_intro; context=~lungTestContext
+boxBreathing,app/features/boxBreathing/screens/LungTestScreen.tsx,75,button_clicked,lung_test_intro,lung_test_skip,,button=lung_test_skip; screen=lung_test_intro
+boxBreathing,app/features/boxBreathing/screens/LungTestScreen.tsx,83,button_clicked,lung_test_intro,lung_test_intro_start,,button=lung_test_intro_start; screen=lung_test_intro
+boxBreathing,app/features/boxBreathing/screens/LungTestScreen.tsx,88,screen_viewed,lung_test_instructions,,,screen=lung_test_instructions
+boxBreathing,app/features/boxBreathing/screens/LungTestScreen.tsx,92,button_clicked,lung_test_instructions,lung_test_instructions_start,,button=lung_test_instructions_start; screen=lung_test_instructions
+boxBreathing,app/features/boxBreathing/screens/LungTestScreen.tsx,97,screen_viewed,lung_test_active,,,screen=lung_test_active
+boxBreathing,app/features/boxBreathing/screens/LungTestScreen.tsx,103,button_clicked,lung_test_active,lung_test_stop,,button=lung_test_stop; screen=lung_test_active; seconds_held=~seconds
+boxBreathing,app/features/boxBreathing/screens/LungTestScreen.tsx,114,lung_test_too_short,lung_test_active,,,screen=lung_test_active
+boxBreathing,app/features/boxBreathing/screens/LungTestScreen.tsx,119,button_clicked,lung_test_too_short,lung_test_retry,,button=lung_test_retry; screen=lung_test_too_short
+boxBreathing,app/features/boxBreathing/screens/LungTestScreen.tsx,133,screen_viewed,lung_test_comparison,,,screen=lung_test_comparison; current_sec=~heldSeconds; baseline_sec=~baselineSeconds; delta_sec=~heldSeconds - baselineSeconds
+boxBreathing,app/features/boxBreathing/screens/LungTestScreen.tsx,140,screen_viewed,lung_test_result,,,screen=lung_test_result; seconds_held=~heldSeconds; is_baseline=~baselineSeconds === null; attempt_number=~attemptNumber
+boxBreathing,app/features/boxBreathing/screens/LungTestScreen.tsx,157,button_clicked,lung_test_comparison | lung_test_result,lung_test_comparison_continue | lung_test_result_continue,,button=lung_test_comparison_continue | lung_test_result_continue; screen=lung_test_comparison | lung_test_result
+boxBreathing,app/features/boxBreathing/store/boxBreathingSaga.ts,64,box_breathing_preference_fallback_used,,,,event_name=box_breathing_preference_fallback_used
+boxBreathing,app/features/boxBreathing/store/boxBreathingSaga.ts,82,error_occurred,box_breathing_settings,,,screen=box_breathing_settings; error_type=box_breathing_fetch_failed; error=~message
+boxBreathing,app/features/boxBreathing/store/boxBreathingSaga.ts,133,box_breathing_settings_save_failed,box_breathing_settings,,,event_name=box_breathing_settings_save_failed; error=~message; screen=box_breathing_settings
+communityCalendar,app/features/communityCalendar/components/CalendarImage.tsx,22,button_clicked,,download_community_calendar,,source=community_calendar; button=download_community_calendar
+communityCalendar,app/features/communityCalendar/screens/CommunityCalendarScreen.tsx,40,screen_viewed,community_calendar,,,screen=community_calendar; source=home
+components,app/components/common/AppUpdateNotice/AppUpdateNoticeScreen.tsx,63,screen_viewed,app_update_notice,,,screen=app_update_notice; source=splash
+components,app/components/common/AppUpdateNotice/AppUpdateNoticeScreen.tsx,72,button_clicked,app_update_notice,update_now,,screen=app_update_notice; button=update_now; latest_version=~latestVersion
+components,app/components/common/AppUpdateNotice/AppUpdateNoticeScreen.tsx,80,button_clicked,app_update_notice,remind_later,,screen=app_update_notice; button=remind_later; latest_version=~latestVersion
+components,app/components/common/NoInternet/NoInternetScreen.tsx,21,screen_viewed,no_internet,,,screen=no_internet; source=splash
+components,app/components/molecules/AppHeader/AppHeader.tsx,119,button_clicked,,home_view_progress,,button=home_view_progress
+components,app/components/molecules/AppHeader/AppHeaderWhatsAppButton.tsx,26,button_clicked,home,home_header_whatsapp_icon,,button=home_header_whatsapp_icon; screen=home; whatsappNumber=~watiNumber; wati_type=~watiType
+components,app/components/molecules/NotificationPermissionModal/useNotificationPermissionModal.ts,89,screen_viewed,notification_permission_modal,,,screen=notification_permission_modal; source=home
+components,app/components/molecules/NotificationPermissionModal/useNotificationPermissionModal.ts,115,button_clicked,notification_permission_modal,notification_permission_allow,,screen=notification_permission_modal; button=notification_permission_allow
+components,app/components/molecules/NotificationPermissionModal/useNotificationPermissionModal.ts,124,button_clicked,notification_permission_modal,notification_permission_close,,screen=notification_permission_modal; button=notification_permission_close
+core,app/core/configs/deepLinking.ts,178,button_clicked,deeplink,deeplink_membership_plan,,button=deeplink_membership_plan; screen=deeplink
+core,app/core/configs/deepLinking.ts,218,button_clicked,deeplink,deeplink_pay,,button=deeplink_pay; screen=deeplink; plan=~resolvedPlan
+core,app/core/configs/deepLinking.ts,258,button_clicked,deeplink,deeplink_leaderboard,,button=deeplink_leaderboard; screen=deeplink
+core,app/core/configs/deepLinking.ts,277,button_clicked,deeplink,deeplink_articles,,button=deeplink_articles; screen=deeplink
+core,app/core/configs/deepLinking.ts,299,button_clicked,deeplink,deeplink_resources,,button=deeplink_resources; screen=deeplink
+core,app/core/configs/deepLinking.ts,327,button_clicked,deeplink,deeplink_physio_booking,,button=deeplink_physio_booking; screen=deeplink
+core,app/core/configs/deepLinking.ts,346,button_clicked,deeplink,deeplink_giftrewards,,button=deeplink_giftrewards; screen=deeplink
+core,app/core/configs/deepLinking.ts,372,button_clicked,deeplink,deeplink_external_link,,button=deeplink_external_link; screen=deeplink
+core,app/core/configs/deepLinking.ts,413,button_clicked,deeplink,deeplink_whatsapp_support,,button=deeplink_whatsapp_support; screen=deeplink
+freeUserAttendance,app/features/freeUserAttendance/screens/FreeUserAttendanceScreen.tsx,123,screen_viewed,attendance,,,screen=attendance; source=home
+freeUserAttendance,app/features/freeUserAttendance/screens/FreeUserAttendanceScreen.tsx,178,button_clicked,attendance,free_user_badge,,screen=attendance; button=free_user_badge
+games,app/features/games/components/PuzzleWinBottomSheet.tsx,91,button_clicked,number_puzzle,kramika_share_score,,screen=number_puzzle; button=kramika_share_score
+games,app/features/games/hooks/useSnakeGame.ts,43,screen_viewed,snake_game,,,screen=snake_game; source=home
+games,app/features/games/hooks/useSnakeGame.ts,58,button_clicked,snake_game,restart_snake_game,,screen=snake_game; button=restart_snake_game
+games,app/features/games/hooks/useSnakeGame.ts,68,snake_game_over,snake_game,,,screen=snake_game; event_name=snake_game_over; value=~score.value
+games,app/features/games/hooks/useSnakeGame.ts,80,button_clicked,snake_game,share_snake_score,,screen=snake_game; button=share_snake_score
+games,app/features/games/screens/GamesScreen.tsx,62,screen_viewed,games,,,screen=games; source=home
+games,app/features/games/screens/GamesScreen.tsx,73,button_clicked,games,~id as AnalyticsButtonNames,,screen=games; button=~id as AnalyticsButtonNames
+games,app/features/games/screens/NumberPuzzleScreen.tsx,73,screen_viewed,number_puzzle,,,screen=number_puzzle; source=home
+games,app/features/games/screens/NumberPuzzleScreen.tsx,85,button_clicked,number_puzzle,kramika_share_score,,screen=number_puzzle; button=kramika_share_score
+games,app/features/games/screens/NumberPuzzleScreen.tsx,114,button_clicked,number_puzzle,kramika_bottomsheet_close,,screen=number_puzzle; button=kramika_bottomsheet_close
+games,app/features/games/screens/NumberPuzzleScreen.tsx,122,button_clicked,number_puzzle,kramika_play_again,,screen=number_puzzle; button=kramika_play_again
+games,app/features/games/screens/SudokuScreen.tsx,24,screen_viewed,sudoku,,,screen=sudoku; source=games
+games,app/features/games/screens/WebviewGameScreen.tsx,25,screen_viewed,webview_game,,,screen=webview_game; source=home
+games,app/features/games/sudoku/components/SudokuGame.tsx,95,button_clicked,sudoku,sudoku_settings,,screen=sudoku; button=sudoku_settings
+games,app/features/games/sudoku/components/SudokuGame.tsx,145,sudoku_completed_already_today,sudoku,,,screen=sudoku; event_name=sudoku_completed_already_today
+games,app/features/games/sudoku/components/SudokuWinBottomSheet.tsx,29,sudoku_share_bottomsheet_shown,sudoku,,,screen=sudoku; event_name=sudoku_share_bottomsheet_shown; component=sudoku_share_bottomsheet; component_shown=true
+games,app/features/games/sudoku/hooks/useSudokuGame.ts,257,sudoku_api_success,sudoku,,,screen=sudoku; event_name=sudoku_api_success
+games,app/features/games/sudoku/hooks/useSudokuGame.ts,265,sudoku_api_error,sudoku,,,screen=sudoku; event_name=sudoku_api_error
+games,app/features/games/sudoku/hooks/useSudokuGame.ts,281,button_clicked,sudoku,sudoku_shuffle_confirm_ok,,screen=sudoku; button=sudoku_shuffle_confirm_ok
+games,app/features/games/sudoku/hooks/useSudokuGame.ts,290,button_clicked,sudoku,sudoku_share_bottomsheet_close,,screen=sudoku; button=sudoku_share_bottomsheet_close
+games,app/features/games/sudoku/hooks/useSudokuGame.ts,300,button_clicked,sudoku,sudoku_shuffle,,screen=sudoku; button=sudoku_shuffle
+games,app/features/games/sudoku/hooks/useSudokuGame.ts,323,button_clicked,sudoku,sudoku_settings_bottomsheet_difficulty,,screen=sudoku; button=sudoku_settings_bottomsheet_difficulty; sudokuDifficultyChosen=~newDifficulty
+home,app/features/home/components/DailyHabits.tsx,52,button_clicked,home,home_screen_water_reminder_tile,,screen=home; button=home_screen_water_reminder_tile
+home,app/features/home/components/DailyHabits.tsx,60,button_clicked,home,home_screen_mind_games_tile,,screen=home; button=home_screen_mind_games_tile
+home,app/features/home/components/DailyHabits.tsx,68,button_clicked,home,home_screen_walk_tile,,screen=home; button=home_screen_walk_tile
+home,app/features/home/components/DailyHabits.tsx,76,button_clicked,home,home_screen_pain_relief_tile,,screen=home; button=home_screen_pain_relief_tile
+home,app/features/home/components/DailyHabitsV3.tsx,38,button_clicked,home,home_daily_habit,,screen=home; button=home_daily_habit; link=~card.link
+home,app/features/home/components/HomeBanner.tsx,31,button_clicked,home,home_banner,,button=home_banner; component=home_banner; screen=home; redirect_url=~redirect
+home,app/features/home/components/HomeBannerV3Section.tsx,66,button_clicked,home,home_feed_banner,,button=home_feed_banner; screen=home; title=~card.title; button_title=~card.buttontext; is_live=~card.islive; link_type=~card.linktype; link=~card.link; active_challenge_id=~activeChallengeId; card_type=~card.type ?? null
+home,app/features/home/components/homeChat/BoxBreathingCard.tsx,41,button_clicked,chat_home,chat_home_box_breathing_start,,screen=chat_home; button=chat_home_box_breathing_start; box_breathing_variant=~item.variant
+home,app/features/home/components/homeChat/CommunitySessionCard.tsx,59,button_clicked,chat_home,chat_home_join_now,,screen=chat_home; button=chat_home_join_now; session_type=community
+home,app/features/home/components/homeChat/CommunitySessionCard.tsx,70,button_clicked,chat_home,chat_home_remind_me,,screen=chat_home; button=chat_home_remind_me; session_type=community
+home,app/features/home/components/homeChat/HomeChatHeader.tsx,41,chat_home_menu_opened,chat_home,,,event_name=chat_home_menu_opened; screen=chat_home
+home,app/features/home/components/homeChat/HomeChatHeader.tsx,50,button_clicked,home,profile,,screen=home; button=profile
+home,app/features/home/components/homeChat/HomeChatInput.tsx,30,button_clicked,chat_home,chat_home_send_message,,screen=chat_home; button=chat_home_send_message
+home,app/features/home/components/homeChat/HomeChatInput.tsx,46,button_clicked,chat_home,chat_home_emoji_picker_open,,screen=chat_home; button=chat_home_emoji_picker_open
+home,app/features/home/components/homeChat/HomeChatInput.tsx,57,button_clicked,chat_home,chat_home_emoji_selected,,screen=chat_home; button=chat_home_emoji_selected
+home,app/features/home/components/homeChat/MindMathCard.tsx,34,button_clicked,chat_home,chat_home_mind_math_play,,screen=chat_home; button=chat_home_mind_math_play
+home,app/features/home/components/homeChat/PostSessionFeedbackCard.tsx,73,button_clicked,chat_home,~choice.analytics,,screen=chat_home; button=~choice.analytics; session_type=~item.program
+home,app/features/home/components/homeChat/SessionCard.tsx,62,button_clicked,chat_home,chat_home_join_now,,screen=chat_home; button=chat_home_join_now; session_type=~item.program; session_time=~item.userStartTime
+home,app/features/home/components/homeChat/SundaySpecialsCard.tsx,65,button_clicked,chat_home,chat_home_sunday_special,,screen=chat_home; button=chat_home_sunday_special; session_type=~item.id
+home,app/features/home/components/homeChat/WhatsAppHomeContent.tsx,52,chat_home_screen_opened,chat_home,,,event_name=chat_home_screen_opened; screen=chat_home
+home,app/features/home/components/HomeFeedBanner.tsx,74,button_clicked,home,home_feed_banner,,button=home_feed_banner; screen=home; title=~card.title; button_title=~card.buttontext; is_live=~card.islive; link_type=~card.linktype; link=~card.link; active_challenge_id=~activeChallengeId; card_type=~card.type ?? null
+home,app/features/home/components/HomeFeedSessions.tsx,76,button_clicked,home,join_now,,screen=home; button=join_now; program_name=~card?.title; program_time=~card?.description; program_title=~card?.subTitle; program_live=~card?.islive; program_join_url=~card?.link
+home,app/features/home/components/HomeFeedSessions.tsx,94,button_clicked,home,join_now,,screen=home; button=join_now; event=session_not_live_yet
+home,app/features/home/components/HomeFeedSessions.tsx,145,button_clicked,home,home_feed_sessions_see_less | home_feed_sessions_see_more,,screen=home; button=home_feed_sessions_see_less | home_feed_sessions_see_more
+home,app/features/home/components/HomePosters.tsx,37,button_clicked,,home_carousel,,button=home_carousel; title=~item.title; redirectionType=~item.redirectionType; redirectionUrl=~item.redirectionUrl
+home,app/features/home/components/HomeUpcomingSessions.tsx,60,button_clicked,home,home_feed_sessions_see_less | home_feed_sessions_see_all,,screen=home; button=home_feed_sessions_see_less | home_feed_sessions_see_all
+home,app/features/home/components/HomeUpcomingSessions.tsx,72,button_clicked,home,home_upcoming_session,,screen=home; button=home_upcoming_session; link=~card.link
+home,app/features/home/components/InactiveUserScreen.tsx,22,button_clicked,home,home_inactive_contact_support,,screen=home; button=home_inactive_contact_support; wati_type=~watiType
+home,app/features/home/components/KnowMoreCard.tsx,27,button_clicked,home,know_more_trishala,,screen=home; button=know_more_trishala
+home,app/features/home/components/MembershipDetailsBottomSheet.tsx,57,screen_viewed,membership_details_bottomsheet,,,screen=membership_details_bottomsheet; source=home
+home,app/features/home/components/MembershipDetailsBottomSheet.tsx,96,button_clicked,membership_details_bottomsheet,view_more_details,,screen=membership_details_bottomsheet; button=view_more_details
+home,app/features/home/components/QuickActions.tsx,82,button_clicked,home,~action?.title,,source=quick_actions; screen=home; button=~action?.title; ...(action?.title === i18n.t(LOCALIZATION_KEYS.SUPPORT_TITLE) && !isOrgPartnerUser ? { wati_type: watiType } : {})
+home,app/features/home/components/QuickActionsV3.tsx,50,button_clicked,home,home_quick_action,,source=quick_actions; screen=home; button=home_quick_action; link=~card.link; ...(isWhatsappSupport ? { wati_type: watiType } : {})
+home,app/features/home/components/SubscriptionPausedSection.tsx,70,subscription_unpaused_successfully,home,,,screen=home
+home,app/features/home/components/SubscriptionPendingCard.tsx,71,button_clicked,home,subscription_pending_know_more,,screen=home; button=subscription_pending_know_more
+home,app/features/home/components/TVLoginModal.tsx,37,button_clicked,tv_login_modal,back,,screen=tv_login_modal; button=back
+home,app/features/home/components/TVLoginModal.tsx,45,button_clicked,tv_login_modal,done,,screen=tv_login_modal; button=done
+home,app/features/home/components/TVLoginModal.tsx,53,button_clicked,tv_login_modal,scan_again,,screen=tv_login_modal; button=scan_again
+home,app/features/home/components/UnPauseMembershipBottomsheet.tsx,28,screen_viewed,subscription_unpause,,,screen=subscription_unpause; source=home
+home,app/features/home/components/WeeklyProgress.tsx,58,button_clicked,~screen ?? 'home',home_view_progress,,screen=~screen ?? 'home'; button=home_view_progress
+home,app/features/home/hooks/useChatHomeAnalytics.ts,16,chat_home_card_rendered,chat_home,,,event_name=chat_home_card_rendered; screen=chat_home; card_type=~cardType; ...extra
+home,app/features/home/hooks/useFreeChallengeEndingCard.ts,91,button_clicked,home,free_challenge_ending_whatsapp,,button=free_challenge_ending_whatsapp; screen=home; whatsappNumber=~watiNumber; wati_type=~watiType; has_live_banner=~hasLiveBanner; days_attended=~daysAttended
+home,app/features/home/hooks/useHomeData.ts,261,screen_viewed,home,,,screen=home; home_experience=~homeExperience; home_revamp_v3=~isPaidUser && homeExperience === 'legacy'; ...(source ? { source } : {})
+home,app/features/home/hooks/useSetReminder.ts,64,button_clicked,home,set_reminder_clicked,,button=set_reminder_clicked; screen=home; card_type=~card.type ?? null; title=~card.title; timing=~card.timing ?? null
+home,app/features/home/hooks/useShareYogaDays.ts,34,button_clicked,,,,
+home,app/features/home/hooks/useTVLogin.ts,69,tv_login_initiated,home,,,screen=home; event_name=tv_login_initiated
+home,app/features/home/hooks/useTVLogin.ts,87,tv_login_success,home,,,screen=home; event_name=tv_login_success
+home,app/features/home/hooks/useTVLogin.ts,101,tv_login_failure,home,,,screen=home; event_name=tv_login_failure; error=~tvLoginState.error
+home,app/features/home/screens/HomeScreen.tsx,272,button_clicked,home,profile,,screen=home; button=profile
+home,app/features/home/screens/HomeScreen.tsx,277,home_menu_opened,home,,,event_name=home_menu_opened; screen=home
+home,app/features/home/utils/inAppUpdate.ts,90,in_app_update_skipped,,,,event_name=in_app_update_skipped; reason=no_update_type_allowed; latest_version=~latestVersion; store_version=~updateCheckResult.storeVersion; is_immediate_allowed=~isImmediateUpdateAllowed; is_flexible_allowed=~isFlexibleUpdateAllowed
+home,app/features/home/utils/inAppUpdate.ts,105,in_app_update_shown,,,,event_name=in_app_update_shown; latest_version=~latestVersion; store_version=~updateCheckResult.storeVersion; update_type=~actualUpdateType; force_update=~forceUpdate
+home,app/features/home/utils/inAppUpdate.ts,121,in_app_update_started,,,,event_name=in_app_update_started; latest_version=~latestVersion; store_version=~updateCheckResult.storeVersion; update_type=~actualUpdateType; force_update=~forceUpdate
+home,app/features/home/utils/inAppUpdate.ts,135,in_app_update_downloaded,,,,event_name=in_app_update_downloaded; latest_version=~latestVersion; bytes_downloaded=~status.bytesDownloaded
+home,app/features/home/utils/inAppUpdate.ts,144,in_app_update_installed,,,,event_name=in_app_update_installed; latest_version=~latestVersion
+home,app/features/home/utils/inAppUpdate.ts,156,error_occurred,,,,error_type=in_app_update_error; latest_version=~latestVersion; force_update=~forceUpdate; error_message=~error instanceof Error ? error.message : 'Unknown error'
+home,app/features/home/utils/sessionRedirectionUtils.ts,116,youtube_redirection,session_redirection,,,screen=session_redirection; source=notification; success=~result.success; method=~result.method; link=~url; slug=~slug; userType=~userType; session_type=~sessionType
+home,app/features/home/utils/urlOpeningUtils.ts,29,youtube_redirection,,,,step=started; url=~url
+home,app/features/home/utils/urlOpeningUtils.ts,34,youtube_redirection,,,,step=opened; url=~url; success=~result.success; method=~result.method; skipped_resolve=true
+home,app/features/home/utils/urlOpeningUtils.ts,50,youtube_redirection,,,,step=resolved; url=~url; resolved_url=~resolvedUrl; redirected=~redirected; status=~status
+home,app/features/home/utils/urlOpeningUtils.ts,58,youtube_redirection,,,,step=opened; url=~url; resolved_url=~resolvedUrl; success=~result.success; method=~result.method
+home,app/features/home/utils/urlOpeningUtils.ts,71,error_occurred,,,,error_type=redirect_resolution_failed; error=~error instanceof Error ? error.name : 'UnknownError'; error_code=~errorCode; error_message=~error instanceof Error ? error.message : String(error); url=~url
+home,app/features/home/utils/urlOpeningUtils.ts,80,youtube_redirection,,,,step=opened; url=~url; success=~result.success; method=~result.method; fallback=true
+hooks,app/hooks/useMoEngageSetup.ts,20,app_first_launch,splash,,,source=app_launch; screen=splash
+hooks,app/hooks/useSessionTracking.ts,15,app_launch_time,,,,duration_ms=~splashScreenDuration
+library,app/library/axios/ApiClient.ts,147,network_error,,,,
+library,app/library/axios/ApiClient.ts,150,network_error,api_call,,,screen=api_call; error_message=~errorResponse.message; error_code=~error.code ?? 'UNKNOWN'; status_code=~errorResponse.statusCode; url=~error.config?.url ?? 'unknown'; method=~error.config?.method?.toUpperCase() ?? 'UNKNOWN'; netinfo_unavailable=true
+library,app/library/axios/axiosInterceptor.ts,189,invalid_refresh_token,,,,status=~status
+library,app/library/growthbook/growthbook.ts,34,experiment_viewed,,,,experiment_id=~experiment.key; variation_id=~result.key
+library,app/library/notifications/analyticsSync.ts,99,notification,,,,
+library,app/library/notifications/analyticsSync.ts,129,notification,,,,
+login,app/features/login/components/CountryPickerModal.tsx,83,button_clicked,onboarding,country_code,,screen=onboarding; button=country_code; country_code_chosen=~item.dial
+login,app/features/login/hooks/useLoginScreen.ts,134,permission,,,,phone_number=~phone; permission=android_phone_number_hint; allowed=granted
+login,app/features/login/hooks/useLoginScreen.ts,148,permission,,,,phone_number=~phone ?? ''; permission=android_phone_number_hint; allowed=denied
+login,app/features/login/hooks/useLoginScreen.ts,155,permission,,,,permission=android_phone_number_hint; allowed=denied
+login,app/features/login/hooks/useLoginScreen.ts,186,button_clicked,onboarding,login_continue,,screen=onboarding; button=login_continue; success=true; isTruecaller=true; isNewUser=~isNewUser
+login,app/features/login/hooks/useLoginScreen.ts,212,button_clicked,onboarding,login_continue,,screen=onboarding; button=login_continue; success=false; isTruecaller=true; error=~errorResponse.message; statusCode=~errorResponse.statusCode
+login,app/features/login/hooks/useLoginScreen.ts,225,truecaller_profile_unusable,onboarding,truecaller,,event_name=truecaller_profile_unusable; screen=onboarding; button=truecaller; error=missing_tokens | sdk_failure; value=~androidTruecallerData?.errorCode
+login,app/features/login/hooks/useLoginScreen.ts,238,error_occurred,onboarding,truecaller,,error_type=truecaller_login_failed; screen=onboarding; button=truecaller; success=false; errorMessage=~errorMessage
+login,app/features/login/hooks/useLoginScreen.ts,253,screen_viewed,onboarding,,,screen=onboarding; source=splash
+login,app/features/login/hooks/useLoginScreen.ts,289,button_clicked,onboarding,login_continue,,screen=onboarding; button=login_continue; success=true; user_status=~userStatus ?? 'existing'
+login,app/features/login/hooks/useLoginScreen.ts,302,button_clicked,onboarding,register_continue,,screen=onboarding; button=register_continue; success=true
+login,app/features/login/hooks/useLoginScreen.ts,312,button_clicked,onboarding,email_otp_login_success,,screen=onboarding; button=email_otp_login_success; success=true
+login,app/features/login/hooks/useLoginScreen.ts,323,button_clicked,onboarding,email_otp_login_success,,screen=onboarding; button=email_otp_login_success; success=false; error_message=~errorResponse.message
+login,app/features/login/hooks/useLoginScreen.ts,352,button_clicked,onboarding,login_continue,,screen=onboarding; button=login_continue; success=false; error=user_registration_required
+login,app/features/login/hooks/useLoginScreen.ts,362,button_clicked,login,login_continue,,screen=login; button=login_continue; success=false; mobile_number=~`${dialCode}${phoneNumber}`; error_message=~errorResponse.message
+login,app/features/login/hooks/useLoginScreen.ts,377,button_clicked,login,register_continue,,screen=login; button=register_continue; success=false; name=~userName; mobile_number=~`${dialCode}${phoneNumber}`; error_message=~errorResponse.message
+login,app/features/login/hooks/useLoginScreen.ts,411,button_clicked,login,login_continue_click,,screen=login; button=login_continue_click; success=false; error_message=~i18n.t(LOCALIZATION_KEYS.INVALID_PHONE)
+login,app/features/login/hooks/useLoginScreen.ts,447,button_clicked,onboarding,register_continue_click,,screen=onboarding; button=register_continue_click; otpChannel=~otpChannel; success=true
+login,app/features/login/hooks/useLoginScreen.ts,454,button_clicked,onboarding,login_continue_click,,screen=onboarding; button=login_continue_click; otpChannel=~otpChannel; success=true
+login,app/features/login/hooks/useLoginScreen.ts,533,button_clicked,onboarding,otp_verification,,screen=onboarding; button=otp_verification; phone_number=~`${dialCode}${phoneNumber}`; success=true; user_type=~resolvedUserType; isNewUser=~isNewUser
+login,app/features/login/hooks/useLoginScreen.ts,561,button_clicked,onboarding,otp_verification,,screen=onboarding; button=otp_verification; phone_number=~`${dialCode}${phoneNumber}`; success=false; isNewUser=~isNewUser
+login,app/features/login/hooks/useLoginScreen.ts,578,button_clicked,onboarding,otp_verification_click,,screen=onboarding; button=otp_verification_click; autoVerify=~autoVerify; isNewUser=~isNewUser; isEmailMode=~isEmailMode
+login,app/features/login/hooks/useLoginScreen.ts,618,button_clicked,onboarding,verify_otp_edit_number,,screen=onboarding; button=verify_otp_edit_number
+login,app/features/login/hooks/useLoginScreen.ts,628,button_clicked,onboarding,email_otp_resend | verify_otp_resend,,screen=onboarding; button=email_otp_resend | verify_otp_resend; phone_number=~`${dialCode}${phoneNumber}`; email=~email
+login,app/features/login/hooks/useOTPInput.ts,65,screen_viewed,otp_verify,,,screen=otp_verify; source=onboarding
+login,app/features/login/hooks/usePhoneInputLogic.ts,235,button_clicked,onboarding,email_otp_login_click,,screen=onboarding; button=email_otp_login_click; success=true
+login,app/features/login/hooks/usePhoneInputLogic.ts,245,button_clicked,onboarding,login_continue_click,,screen=onboarding; button=login_continue_click; success=false; error_message=Phone number is empty
+login,app/features/login/hooks/usePhoneInputLogic.ts,255,button_clicked,onboarding,login_continue_click,,screen=onboarding; button=login_continue_click; success=false; error_message=Name is required
+login,app/features/login/hooks/usePhoneInputLogic.ts,266,button_clicked,onboarding,login_continue_click,,screen=onboarding; button=login_continue_click; success=false; error_message=Invalid phone number
+login,app/features/login/hooks/usePhoneInputLogic.ts,307,button_clicked,onboarding,toggle_login_method,,screen=onboarding; button=toggle_login_method; mode=phone | email
+login,app/features/login/hooks/usePhoneInputLogic.ts,327,button_clicked,onboarding,country_code,,screen=onboarding; button=country_code; country_code_chosen=~country.dial
+login,app/features/login/hooks/usePhoneInputLogic.ts,342,button_clicked,onboarding,country_code_dropdown_opened,,screen=onboarding; button=country_code_dropdown_opened
+login,app/features/login/hooks/usePhoneInputLogic.ts,354,button_clicked,onboarding,support,,screen=onboarding; button=support; mode=email | phone; ...(isEmailMode ? {} : { wati_type: watiType })
+login,app/features/login/screens/OrientationScreen.tsx,64,screen_viewed,orientation,,,screen=orientation
+login,app/features/login/screens/OrientationScreen.tsx,68,button_clicked,orientation,remind_me,,screen=orientation; button=remind_me; orientation_date=~orientationDateRaw
+login,app/features/login/screens/OrientationScreen.tsx,77,button_clicked,orientation,go_to_home,,screen=orientation; button=go_to_home; orientation_date=~orientationDateRaw
+login,app/features/login/store/loginSaga.ts,418,user_registered,,,,event_name=user_registered; method=phone; media_source=~sourceData.media_source ?? null; is_first_launch=~getIsFirstLaunchSession(); days_since_install=~daysSinceInstall(sourceData.install_time); phone_number=~phone; active_challenge_id=~registerChallenge?.active_challenge_id ?? null; orientation_start_date=~registerChallenge ? computeOrientationStartDate(registerChallenge.active_start_date) : null; active_challenge_start_date=~registerChallenge?.active_start_date ?? null
+login,app/features/login/store/loginSaga.ts,545,user_registered,,,,event_name=user_registered; method=truecaller; media_source=~sourceData.media_source ?? null; is_first_launch=~getIsFirstLaunchSession(); days_since_install=~daysSinceInstall(sourceData.install_time); phone_number=~account?.phone_number; active_challenge_id=~challenge?.active_challenge_id ?? null; orientation_start_date=~challenge ? computeOrientationStartDate(challenge.active_start_date) : null; active_challenge_start_date=~challenge?.active_start_date ?? null
+membership,app/features/membership/hooks/usePaymentCards.ts,122,button_clicked,my_membership,view_details,,screen=my_membership; button=view_details
+membership,app/features/membership/screens/MyMembershipScreen.tsx,81,button_clicked,my_membership,change_start_date,,screen=my_membership; button=change_start_date
+membership,app/features/membership/screens/MyMembershipScreen.tsx,110,no_membership_status,my_membership,,,screen=my_membership; event_name=no_membership_status
+membership,app/features/membership/screens/MyMembershipScreen.tsx,117,no_membership_start_date,my_membership,,,screen=my_membership; event_name=no_membership_start_date
+membership,app/features/membership/screens/MyMembershipScreen.tsx,124,zero_days_remaining,my_membership,,,screen=my_membership; event_name=zero_days_remaining
+membership,app/features/membership/screens/MyMembershipScreen.tsx,131,screen_viewed,my_membership,,,screen=my_membership
+physio,app/features/physio/components/ExitConfirmModal.tsx,39,screen_viewed,exit_confirm,,,screen=exit_confirm
+physio,app/features/physio/components/ExitConfirmModal.tsx,43,button_clicked,exit_confirm,exit_leave,,button=exit_leave; screen=exit_confirm
+physio,app/features/physio/components/ExitConfirmModal.tsx,51,button_clicked,exit_confirm,exit_continue,,button=exit_continue; screen=exit_confirm
+physio,app/features/physio/components/SetReminderModal.tsx,46,screen_viewed,set_reminder,,,screen=set_reminder; pain_area=~painArea
+physio,app/features/physio/components/SetReminderModal.tsx,62,reminder_set,,,,time=~time; pain_area=~painArea
+physio,app/features/physio/components/SetReminderModal.tsx,98,button_clicked,set_reminder,close,,button=close; screen=set_reminder; pain_area=~painArea
+physio,app/features/physio/components/SetReminderModal.tsx,133,button_clicked,set_reminder,cancel,,button=cancel; screen=set_reminder; pain_area=~painArea
+physio,app/features/physio/hooks/useCurrentPhysioVideo.ts,43,screen_viewed,video,,,screen=video; pain_area=~painArea; video_id=~currentVideo.id
+physio,app/features/physio/hooks/useExitConfirmGuard.ts,74,physio_flow_exited,,,,
+physio,app/features/physio/hooks/usePhysioVideoSession.ts,98,session_completed,,,,pain_area=~painArea; video_id=~video.id; video_title=~video.title
+physio,app/features/physio/screens/ConsistencyResultsScreen.tsx,43,screen_viewed,consistency,,,screen=consistency; pain_area=~painArea
+physio,app/features/physio/screens/ConsistencyResultsScreen.tsx,50,button_clicked,consistency,close,,button=close; screen=consistency; pain_area=~painArea
+physio,app/features/physio/screens/ConsistencyResultsScreen.tsx,59,button_clicked,consistency,set_reminder,,button=set_reminder; screen=consistency; pain_area=~painArea
+physio,app/features/physio/screens/PainReliefIntroScreen.tsx,87,screen_viewed,pain_relief_intro,,,screen=pain_relief_intro
+physio,app/features/physio/screens/PainReliefIntroScreen.tsx,93,button_clicked,pain_relief_intro,get_started,,button=get_started; screen=pain_relief_intro
+physio,app/features/physio/screens/PainReliefIntroScreen.tsx,115,button_clicked,pain_relief_intro,back,,button=back; screen=pain_relief_intro
+physio,app/features/physio/screens/PracticeDoneScreen.tsx,79,screen_viewed,practice_done,,,screen=practice_done; pain_area=~painArea
+physio,app/features/physio/screens/PracticeDoneScreen.tsx,192,button_clicked,practice_done,close,,button=close; screen=practice_done; pain_area=~painArea
+physio,app/features/physio/screens/PracticeDoneScreen.tsx,203,button_clicked,practice_done,change_reminder | set_reminder,,button=change_reminder | set_reminder; screen=practice_done; pain_area=~painArea
+physio,app/features/physio/screens/PracticeDoneScreen.tsx,227,button_clicked,practice_done,delete_reminder,,button=delete_reminder; screen=practice_done; pain_area=~painArea
+physio,app/features/physio/screens/PracticeDoneScreen.tsx,232,reminder_deleted,,,,pain_area=~painArea
+physio,app/features/physio/screens/PracticeDoneScreen.tsx,241,button_clicked,practice_done,share_exercise,,button=share_exercise; screen=practice_done; pain_area=~painArea
+physio,app/features/physio/screens/PracticeDoneScreen.tsx,344,button_clicked,practice_done,recommendation_video,,button=recommendation_video; screen=practice_done; pain_area=~painArea; video_id=~v.id
+physio,app/features/physio/screens/PracticeVideoScreen.tsx,122,button_clicked,video,change_pain_area,,button=change_pain_area; screen=video; pain_area=~painArea
+physio,app/features/physio/screens/PracticeVideoScreen.tsx,131,button_clicked,video,consult_physio,,button=consult_physio; screen=video; pain_area=~painArea
+physio,app/features/physio/screens/PracticeVideoScreen.tsx,157,button_clicked,practice_video,back,,button=back; screen=practice_video; pain_area=~painArea
+physio,app/features/physio/screens/PracticeVideoScreen.tsx,202,button_clicked,practice_video,back,,button=back; screen=practice_video; pain_area=~painArea
+physio,app/features/physio/screens/PracticeVideoScreen.tsx,290,button_clicked,practice_video,recommendation_video,,button=recommendation_video; screen=practice_video; pain_area=~painArea; video_id=~v.id
+physio,app/features/physio/screens/SelectPainAreaScreen.tsx,49,screen_viewed,select_areas,,,screen=select_areas
+physio,app/features/physio/screens/SelectPainAreaScreen.tsx,54,button_clicked,select_areas,area_select,,button=area_select; screen=select_areas; value=~id
+physio,app/features/physio/screens/SelectPainAreaScreen.tsx,84,button_clicked,select_areas,back,,button=back; screen=select_areas
+physio,app/features/physio/screens/SelectSeverityScreen.tsx,76,screen_viewed,severity,,,screen=severity; pain_area=~painArea
+physio,app/features/physio/screens/SelectSeverityScreen.tsx,84,button_clicked,severity,severity_select,,button=severity_select; screen=severity; value=~severity; pain_area=~painArea
+physio,app/features/physio/screens/SelectSeverityScreen.tsx,116,button_clicked,select_severity,back,,button=back; screen=select_severity
+profile,app/features/profile/components/AccountManagement.tsx,45,button_clicked,,delete_account,,button=delete_account
+profile,app/features/profile/components/LanguageSelector.tsx,71,language_changed,profile,,,screen=profile; event_name=language_changed; language=~language; previous_language=~currentLanguage
+profile,app/features/profile/components/NotificationSettings.tsx,99,button_clicked,profile,session_reminder_toggle,,screen=profile; button=session_reminder_toggle; enabled=false; blocked_reason=no_permission
+profile,app/features/profile/components/NotificationSettings.tsx,115,button_clicked,profile,session_reminder_toggle,,screen=profile; button=session_reminder_toggle; enabled=~newValue
+profile,app/features/profile/components/NotificationSettings.tsx,132,button_clicked,profile,email_notification_toggle_failed_no_email,,screen=profile; button=email_notification_toggle_failed_no_email
+profile,app/features/profile/components/ThemeSelector.tsx,54,button_clicked,profile,profile_theme_selector,,screen=profile; button=profile_theme_selector; selected_theme=~mode
+profile,app/features/profile/components/ThemeSettings.tsx,55,button_clicked,profile,profile_theme_selector,,screen=profile; button=profile_theme_selector; theme=~mode
+profile,app/features/profile/hooks/useClassTimings.ts,107,button_clicked,profile,program_settings,,screen=profile; button=program_settings; programName=~row.programName
+profile,app/features/profile/hooks/useClassTimings.ts,169,button_clicked,profile,batch_time_change,,screen=profile; button=batch_time_change; sessionName=~activeProgram.programName; batchId=~pendingBatchId
+profile,app/features/profile/hooks/useLogout.ts,28,button_clicked,profile,logout,,screen=profile; button=logout
+profile,app/features/profile/hooks/useNotificationToggles.ts,85,button_clicked,profile,whatsapp_notification_toggle,,screen=profile; button=whatsapp_notification_toggle; program_id=~programId; enabled=~next
+profile,app/features/profile/hooks/useNotificationToggles.ts,109,button_clicked,profile,whatsapp_notification_toggle,,screen=profile; button=whatsapp_notification_toggle; enabled=~next
+profile,app/features/profile/hooks/useNotificationToggles.ts,137,button_clicked,profile,email_notification_toggle,,screen=profile; button=email_notification_toggle; program_id=~programId; enabled=~next
+profile,app/features/profile/hooks/usePersonalDetails.ts,210,screen_viewed,personal_details,,,screen=personal_details; source=profile
+profile,app/features/profile/hooks/usePersonalDetails.ts,318,save_cta_success,personal_details,save_personal_details,,screen=personal_details; event_name=save_cta_success; button=save_personal_details
+profile,app/features/profile/hooks/usePersonalDetails.ts,332,save_cta_error,personal_details,save_personal_details,,screen=personal_details; event_name=save_cta_error; button=save_personal_details
+profile,app/features/profile/hooks/usePersonalDetails.ts,346,button_clicked,personal_details,save_personal_details,,screen=personal_details; button=save_personal_details
+profile,app/features/profile/hooks/useTimezone.ts,64,screen_viewed,timezone_select,,,screen=timezone_select; source=profile
+profile,app/features/profile/hooks/useTimezone.ts,80,save_cta_success,timezone_select,save,,screen=timezone_select; event_name=save_cta_success; button=save
+profile,app/features/profile/hooks/useTimezone.ts,94,save_cta_error,timezone_select,save,,screen=timezone_select; event_name=save_cta_error; button=save
+profile,app/features/profile/hooks/useTimezone.ts,117,button_clicked,timezone_select,save,,screen=timezone_select; button=save; selected_timezone=~timezone
+profile,app/features/profile/screens/ProfileScreen.tsx,127,screen_viewed,profile,,,screen=profile; ...(source ? { source } : {})
+profile,app/features/profile/screens/ProfileScreen.tsx,170,button_clicked,,view_details,,button=view_details
+profile,app/features/profile/screens/ProfileScreen.tsx,177,button_clicked,profile,logout,,screen=profile; button=logout
+referral,app/features/referral/components/MyRewardsCard.tsx,28,button_clicked,referral,my_rewards_card,,screen=referral; button=my_rewards_card
+referral,app/features/referral/components/ReferredUsersList.tsx,167,button_clicked,referral,referral_filter,,screen=referral; button=referral_filter
+referral,app/features/referral/hooks/useReferralLink.ts,52,button_clicked,referral,copy_referral_link,,screen=referral; button=copy_referral_link
+referral,app/features/referral/hooks/useReferralLink.ts,63,button_clicked,referral,share_whatsapp_status,,screen=referral; button=share_whatsapp_status
+referral,app/features/referral/hooks/useReferralLink.ts,75,button_clicked,referral,share_whatsapp_message,,screen=referral; button=share_whatsapp_message
+referral,app/features/referral/screens/ReferralScreen.tsx,159,button_clicked,referral,claim_gift_card,,screen=referral; button=claim_gift_card; unclaimed_count=~unclaimedCount
+referral,app/features/referral/screens/ReferralScreen.tsx,177,claim_gift_card_viewed,referral,,,event_name=claim_gift_card_viewed; screen=referral; unclaimed_count=~unclaimedCount; tier_type=~userTierType
+referral,app/features/referral/screens/ReferralScreen.tsx,187,button_clicked,referral,view_qr,,screen=referral; button=view_qr
+referral,app/features/referral/screens/ReferralScreen.tsx,193,button_clicked,referral,,,screen=referral
+referral,app/features/referral/screens/ReferralScreen.tsx,202,screen_viewed,referral,,,screen=referral; ...(source ? { source } : {})
+rewards,app/features/rewards/hooks/useRewards.ts,61,screen_viewed,rewards,,,screen=rewards; source=referral
+status,app/features/status/components/StatusCtaContext.tsx,133,button_clicked,status,,,screen=status; location=cta; story_id=~storyId; template_id=~templateId; variation=~variation; cta_key=~ctaKey; action=~action; ...(action === 'share' ? { share_type: args.shareType ?? 'link' } : {})
+status,app/features/status/components/StatusCtaContext.tsx,156,button_clicked,status,,,screen=status; location=~location; story_id=~storyId; template_id=~templateId; variation=~variation; ...extra
+status,app/features/status/components/StatusModal.tsx,76,screen_viewed,status,,,screen=status; location=~card.templateId; story_id=~card.storyId
+status,app/features/status/components/StatusModal.tsx,94,button_clicked,status,,,screen=status; location=close; cards_viewed=~seen.current.size
+status,app/features/status/components/StatusPager.tsx,230,button_clicked,status,,~trigger,screen=status; location=navigation; action=~action; trigger=~trigger; story_id=~shownCard?.storyId; template_id=~shownCard?.templateId
+status,app/features/status/components/StatusRow.tsx,39,screen_viewed,home,,,screen=home; location=status; story_count=~circles.length
+status,app/features/status/components/StatusRow.tsx,65,button_clicked,home,,,screen=home; location=status; circle_id=~circle.id; template_id=~circle.templateId; story_count=~circle.stories.length
+stepTracker,app/features/stepTracker/hooks/useStepTracker.ts,122,permission,step_tracker,,,screen=step_tracker; permission=health_api; allowed=granted
+stepTracker,app/features/stepTracker/hooks/useStepTracker.ts,129,permission,step_tracker,,,screen=step_tracker; permission=health_api; allowed=denied
+stepTracker,app/features/stepTracker/hooks/useStepTracker.ts,159,steps_logged,step_tracker,,,screen=step_tracker; event_name=steps_logged; value=~healthData.steps
+stepTracker,app/features/stepTracker/hooks/useStepTracker.ts,233,button_clicked,step_tracker,grant_permission,,screen=step_tracker; button=grant_permission
+stepTracker,app/features/stepTracker/hooks/useStepTracker.ts,259,button_clicked,step_tracker,playstore_health_connect_install,,screen=step_tracker; button=playstore_health_connect_install
+stepTracker,app/features/stepTracker/hooks/useStepTracker.ts,286,button_clicked,step_tracker,partial_permissions_help,,button=partial_permissions_help; screen=step_tracker
+stepTracker,app/features/stepTracker/hooks/useStepTracker.ts,415,screen_viewed,step_tracker,,,screen=step_tracker; ...(source ? { source } : {}); view=~view
+stepTracker,app/features/stepTracker/hooks/useStepTrackerData.ts,101,permission,step_tracker,,,screen=step_tracker; permission=health_api; allowed=granted
+stepTracker,app/features/stepTracker/hooks/useStepTrackerData.ts,311,screen_viewed,step_tracker,,,screen=step_tracker; source=quick_actions
+stepTracker,app/features/stepTracker/hooks/useStepTrackerData.ts,325,button_clicked,step_tracker,grant_permission,,screen=step_tracker; button=grant_permission
+stepTracker,app/features/stepTracker/utils/stepTrackerUtils.ts,22,button_clicked,step_tracker,playstore_health_connect_install,,screen=step_tracker; button=playstore_health_connect_install
+support,app/features/support/components/molecules/ChatInput/ChatInput.tsx,35,button_clicked,support_chat,send_message,,screen=support_chat; button=send_message
+support,app/features/support/hooks/useSupportChat.ts,30,screen_viewed,support_chat,,,screen=support_chat; source=support
+support,app/features/support/hooks/useSupportChat.ts,100,button_clicked,support_chat,call_support,,screen=support_chat; button=call_support; wati_type=~watiType
+support,app/features/support/screens/SupportScreen.tsx,31,screen_viewed,support,,,screen=support; source=home
+support,app/features/support/screens/SupportScreen.tsx,39,button_clicked,support,start_chat,,screen=support; button=start_chat
+trishalaProgram,app/features/trishalaProgram/hooks/useEnableDance.ts,35,screen_viewed,enable_dance,,,screen=enable_dance; source=home
+trishalaProgram,app/features/trishalaProgram/hooks/useEnableDance.ts,50,button_clicked,enable_dance,enable_dance,,screen=enable_dance; button=enable_dance
+utils,app/utils/postLoginPermissions.ts,36,button_clicked,,,,permission=notification; allowed=granted | denied; context=post_login
+utils,app/utils/postLoginPermissions.ts,58,button_clicked,,,,permission=notification; allowed=granted | denied; context=post_login
+waterReminder,app/features/waterReminder/_legacy/components/WaterIntakeForm.tsx,87,button_clicked,water_reminder,mark_water_intake,,screen=water_reminder; button=mark_water_intake
+waterReminder,app/features/waterReminder/_legacy/components/WaterReminderToggles.tsx,46,button_clicked,water_reminder,water_reminder_toggle,,screen=water_reminder; button=water_reminder_toggle
+waterReminder,app/features/waterReminder/_legacy/hooks/useWaterIntakeTracking.ts,38,button_clicked,water_reminder,mark_water_intake,,screen=water_reminder; button=mark_water_intake
+waterReminder,app/features/waterReminder/_legacy/hooks/useWaterReminderToggle.ts,20,button_clicked,water_reminder,water_reminder_toggle,,screen=water_reminder; button=water_reminder_toggle; whatsapp_notification=~whatsappStatus; app_notification=~appStatus
+waterReminder,app/features/waterReminder/_legacy/screens/WaterReminderScreen.tsx,87,screen_viewed,water_reminder,,,screen=water_reminder; source=home
+waterReminder,app/features/waterReminder/components/WaterOnboardingSheet.tsx,78,screen_viewed,,,,
+waterReminder,app/features/waterReminder/components/WaterOnboardingSheet.tsx,142,button_clicked,,,,
+waterReminder,app/features/waterReminder/components/WaterOnboardingSheet.tsx,168,button_clicked,,,,
+waterReminder,app/features/waterReminder/screens/WaterReminderScreen.tsx,123,screen_viewed,,,,
+waterReminder,app/features/waterReminder/screens/WaterReminderScreen.tsx,140,water_goal_reached,,,,
+waterReminder,app/features/waterReminder/screens/WaterReminderScreen.tsx,164,button_clicked,,,,
+waterReminder,app/features/waterReminder/screens/WaterReminderScreen.tsx,177,button_clicked,,,,
+waterReminder,app/features/waterReminder/screens/WaterReminderScreen.tsx,216,button_clicked,,,,
+waterReminder,app/features/waterReminder/screens/WaterReminderScreen.tsx,229,button_clicked,,,,
+waterReminder,app/features/waterReminder/screens/WaterReminderScreen.tsx,244,button_clicked,,,,
+waterReminder,app/features/waterReminder/utils/waterAnalytics.ts,17,water_reminder_permission,water_reminder,,,screen=water_reminder; allowed=granted | denied; wr_version=~WR_ANALYTICS_VERSION
+webview,app/features/webview/hooks/useWebview.ts,140,error_occurred,,,,error_type=cookie_set_failure; error_message=~`Failed to set cookie for the URL ${url}: ${error instanceof Error ? error.message : String(error)}. Has Access Token: ${!!accessToken}`; url=~url; has_access_token=~!!accessToken
+webview,app/features/webview/hooks/useWebview.ts,150,screen_viewed,webview,,,screen=webview; source=home; url=~url; title=~title
+webview,app/features/webview/hooks/useWebview.ts,201,webview_badge_download_initiated,,,,url=~url; event_name=webview_badge_download_initiated; file_name=~message?.filename; file_extension=~fileExtension; image_size_bytes=~imageSizeBytes
+webview,app/features/webview/hooks/useWebview.ts,213,webview_badge_download_succeeded,,,,url=~url; event_name=webview_badge_download_succeeded; file_name=~message?.filename; file_extension=~fileExtension
+webview,app/features/webview/hooks/useWebview.ts,220,error_occurred,,,,error_type=webview_download_error; error_message=~`Failed to download file: ${error instanceof Error ? error.message : String(error)}`; url=~url; file_name=~message?.filename; file_extension=~fileExtension
+webview,app/features/webview/hooks/useWebview.ts,239,webview_badge_share_initiated,,,,url=~url; event_name=webview_badge_share_initiated; image_size_bytes=~imageSizeBytes; caller_text_length=~callerText.length; used_default_text=~usedDefaultText
+webview,app/features/webview/hooks/useWebview.ts,248,webview_badge_share_succeeded,,,,url=~url; event_name=webview_badge_share_succeeded; caller_text_length=~callerText.length; used_default_text=~usedDefaultText
+webview,app/features/webview/hooks/useWebview.ts,255,error_occurred,,,,error_type=webview_share_error; error_message=~`Failed to share file: ${error instanceof Error ? error.message : String(error)}`; url=~url; caller_text_length=~callerText.length; used_default_text=~usedDefaultText
+webview,app/features/webview/hooks/useWebview.ts,270,error_occurred,,,,error_type=webview_message_parse_error; error_message=~`Failed to parse webview message: ${error instanceof Error ? error.message : String(error)}`; url=~url
+webview,app/features/webview/hooks/useWebview.ts,356,error_occurred,,,,error_type=webview_error; error_message=~`WebView error for ${url}: ${nativeEvent.description}. Code: ${nativeEvent.code}`; url=~url; error_code=~nativeEvent.code; error_description=~nativeEvent.description
+webview,app/features/webview/hooks/useWebview.ts,370,error_occurred,,,,error_type=webview_http_error; error_message=~`WebView HTTP error for ${url}: Status ${nativeEvent.statusCode} - ${nativeEvent.description}`; url=~url; status_code=~nativeEvent.statusCode; error_description=~nativeEvent.description
